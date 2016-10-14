@@ -1,4 +1,3 @@
-
 #!/bin/sh
 apt-get update
 sudo apt-get install qt5-default
@@ -19,3 +18,5 @@ qmake
 make
 cd ../bin
 export LD_LIBRARY_PATH=`pwd`
+cd ../scripts
+./build_and_test.sh
