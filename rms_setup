@@ -9,7 +9,7 @@ sudo apt-get install libsecret-1-dev
 sudo apt-get install freeglut3-dev
 sudo apt-get install git
 cd ~
-git clone https://github.com/Amullerf1/rms-sdk-for-cpp
+git clone https://github.com/AzureAD/rms-sdk-for-cpp
 cd rms-sdk-for-cpp
 cd sdk
 qmake
