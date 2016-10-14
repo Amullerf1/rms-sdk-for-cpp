@@ -15,10 +15,10 @@ TARGET_DIR=./dist/release
 DEFINES=
 
 BUILD=true
-DEBUG=false
-TEST=false
+DEBUG=true
+TEST=true
 SAMPLE=true
-TRAVIS=false
+TRAVIS=true
 while [ $# -gt 0 ]; do
   case $1 in
     debug) DEBUG=true
