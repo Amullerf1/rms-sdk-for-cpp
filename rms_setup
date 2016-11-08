@@ -1,5 +1,6 @@
 #!/bin/sh
 echo $1
+echo $2
 apt-get update
 echo $PASSWORD | sudo -S sudo apt-get install qt5-default
 echo $PASSWORD | sudo -S sudo apt-get install libqt5webkit5-dev
