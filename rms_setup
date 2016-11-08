@@ -19,4 +19,4 @@ make
 cd ../bin
 export LD_LIBRARY_PATH=`pwd`
 cd ../scripts
-sudo ./build_and_test.sh test
+./build_and_test.sh test
