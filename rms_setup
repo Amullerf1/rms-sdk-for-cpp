@@ -19,4 +19,4 @@ make
 cd ../bin
 export LD_LIBRARY_PATH=`pwd`
 cd ../scripts
-./build_and_test.sh test
+echo $1 | sudo -S sudo ./build_and_test.sh test
