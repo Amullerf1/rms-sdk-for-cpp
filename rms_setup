@@ -1,14 +1,12 @@
 #!/bin/sh
-echo $1
-echo $2
 apt-get update
-echo $PASSWORD | sudo -S sudo apt-get install qt5-default
-echo $PASSWORD | sudo -S sudo apt-get install libqt5webkit5-dev
-echo $PASSWORD | sudo -S sudo apt-get install libqt5xmlpatterns5-dev
-echo $PASSWORD | sudo -S sudo apt-get install libssl-dev
-echo $PASSWORD | sudo -S sudo apt-get install libsecret-1-dev
-echo $PASSWORD | sudo -S sudo apt-get install freeglut3-dev
-echo $PASSWORD | sudo -S sudo apt-get install git
+echo $1 | sudo -S sudo apt-get install qt5-default
+echo $1 | sudo -S sudo apt-get install libqt5webkit5-dev
+echo $1 | sudo -S sudo apt-get install libqt5xmlpatterns5-dev
+echo $1 | sudo -S sudo apt-get install libssl-dev
+echo $1 | sudo -S sudo apt-get install libsecret-1-dev
+echo $1 | sudo -S sudo apt-get install freeglut3-dev
+echo $1 | sudo -S sudo apt-get install git
 cd ~
 git clone https://github.com/AzureAD/rms-sdk-for-cpp
 cd rms-sdk-for-cpp
