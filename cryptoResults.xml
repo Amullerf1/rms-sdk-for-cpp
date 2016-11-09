@@ -26,7 +26,6 @@
 </TestFunction>
 <Duration msecs="2.354179"/>
 </TestCase>
-<?xml version="1.0" encoding="UTF-8"?>
 <TestCase name="KeyStorageTests">
 <Environment>
     <QtVersion>5.7.0</QtVersion>
