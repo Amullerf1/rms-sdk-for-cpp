@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <testsuite errors="0" failures="2" tests="3" name="CryptoAPITests">
+      <properties>
+        <property value="5.7.0" name="QTestVersion"/>
+        <property value="5.7.0" name="QtVersion"/>
+        <property value="Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)" name="QtBuild"/>
+      </properties>
+      <testcase result="pass" name="initTestCase"/>
+      <testcase result="fail" name="EncryptDecryptBlockTest">
+        <failure tag="0" message="KeyStorage is not implemented on this platform" result="fail"/>
+        <failure tag="1" message="KeyStorage is not implemented on this platform" result="fail"/>
+      </testcase>
+      <testcase result="pass" name="cleanupTestCase"/>
+      <system-err/>
+    </testsuite>
+    <testsuite errors="0" failures="2" tests="3" name="KeyStorageTests">
+      <properties>
+        <property value="5.7.0" name="QTestVersion"/>
+        <property value="5.7.0" name="QtVersion"/>
+        <property value="Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)" name="QtBuild"/>
+      </properties>
+      <testcase result="pass" name="initTestCase"/>
+      <testcase result="fail" name="KeyUsage">
+        <failure tag="0" message="KeyStorage is not implemented on this platform" result="fail"/>
+        <failure tag="1" message="KeyStorage is not implemented on this platform" result="fail"/>
+      </testcase>
+      <testcase result="pass" name="cleanupTestCase"/>
+      <system-err/>
+    </testsuite>
+    <testsuite errors="0" failures="1" tests="3" name="CryptedStreamTests">
+      <properties>
+        <property value="5.7.0" name="QTestVersion"/>
+        <property value="5.7.0" name="QtVersion"/>
+        <property value="Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)" name="QtBuild"/>
+      </properties>
+      <testcase result="pass" name="initTestCase"/>
+      <testcase result="fail" name="CryptedStreamToMemory">
+        <failure tag="AES_CBC4K" message="Block is not aligned" result="fail"/>
+      </testcase>
+      <testcase result="pass" name="cleanupTestCase"/>
+      <system-err/>
+    </testsuite>
