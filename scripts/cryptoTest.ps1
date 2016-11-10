@@ -1,12 +1,24 @@
-$logFile = "cryptoTest.txt"
-$xmlOutputFile = "cryptoTest.xml"
+$logFile = "..\bin\tests\rmsUnitTestResults.txt"
 
-$result = Get-Content $logFile | select -skip 1
+$xmlOutputFile = "..\bin\tests\rmsUnitTestsResults.xml"
+$result = ""
 
-foreach($line in $result){
+
+$result,$file = Get-Content $logFile
+$result = $result + "`n<testsuites>"
+
+Clear-Content $xmlOutputFile
+
+foreach($line in $file){
+
     Write-Host $line
-    if($line.startsWith("<?xml")){
-        $line = "";
+
+    if(!$line.startsWith("<?xml")){
+
+        $result = $result + "`n"+$line;
     }
 }
+$result = $result + "`n</testsuites>"
+Write-Host $result
+
 Add-content $xmlOutputFile -value $result
