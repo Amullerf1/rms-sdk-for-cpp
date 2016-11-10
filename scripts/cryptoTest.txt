@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="2" tests="3" name="CryptoAPITests">
+  <properties>
+    <property value="5.2.1" name="QTestVersion"/>
+    <property value="5.2.1" name="QtVersion"/>
+  </properties>
+  <testcase result="pass" name="initTestCase"/>
+  <testcase result="fail" name="EncryptDecryptBlockTest">
+    <failure tag="0" message="Error calling StartServiceByName for org.freedesktop.secrets: Timeout was reached" result="fail"/>
+    <failure tag="1" message="Error calling StartServiceByName for org.freedesktop.secrets: Timeout was reached" result="fail"/>
+  </testcase>
+  <testcase result="pass" name="cleanupTestCase"/>
+  <system-err/>
+</testsuite>
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="2" tests="3" name="KeyStorageTests">
+  <properties>
+    <property value="5.2.1" name="QTestVersion"/>
+    <property value="5.2.1" name="QtVersion"/>
+  </properties>
+  <testcase result="pass" name="initTestCase"/>
+  <testcase result="fail" name="KeyUsage">
+    <failure tag="0" message="Error calling StartServiceByName for org.freedesktop.secrets: Timeout was reached" result="fail"/>
+    <failure tag="1" message="Error calling StartServiceByName for org.freedesktop.secrets: Timeout was reached" result="fail"/>
+  </testcase>
+  <testcase result="pass" name="cleanupTestCase"/>
+  <system-err/>
+</testsuite>
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" tests="3" name="CryptedStreamTests">
+  <properties>
+    <property value="5.2.1" name="QTestVersion"/>
+    <property value="5.2.1" name="QtVersion"/>
+  </properties>
+  <testcase result="pass" name="initTestCase"/>
+  <testcase result="pass" name="CryptedStreamToMemory"/>
+  <testcase result="pass" name="cleanupTestCase"/>
+  <system-err/>
+</testsuite>
