@@ -22,9 +22,9 @@ cd ../scripts
 echo $1 | sudo -S sudo ./build_and_test.sh
 cd ../bin
 cp tests/*UnitTests .
-./rmscryptoUnitTests -xunitxml > rmscryptoResults.xml
-./rmsauthUnitTests -xunitxml > rmsauthResults.xml
-./rmsplatformUnitTests -xunitxml > rmsplatformResults.xml
+./rmscryptoUnitTests -xunitxml > rmscryptoResults.txt
+./rmsauthUnitTests -xunitxml > rmsauthResults.txt
+./rmsplatformUnitTests -xunitxml > rmsplatformResults.txt
 mv rmscryptoUnitTests tests/.
 mv rmsauthUnitTests tests/.
 mv rmsplatformUnitTests tests/.
