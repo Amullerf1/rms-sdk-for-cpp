@@ -1,79 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCase name="CryptoAPITests">
-<Environment>
-    <QtVersion>5.7.0</QtVersion>
-    <QtBuild>Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)</QtBuild>
-    <QTestVersion>5.7.0</QTestVersion>
-</Environment>
-<TestFunction name="initTestCase">
-<Incident type="pass" file="" line="0" />
-    <Duration msecs="0.340131"/>
-</TestFunction>
-<TestFunction name="EncryptDecryptBlockTest">
-<Incident type="fail" file="..\..\..\sdk\rmscrypto_sdk\UnitTests\CryptoAPITests.cpp" line="51">
-    <DataTag><![CDATA[0]]></DataTag>
-    <Description><![CDATA[KeyStorage is not implemented on this platform]]></Description>
-</Incident>
-<Incident type="fail" file="..\..\..\sdk\rmscrypto_sdk\UnitTests\CryptoAPITests.cpp" line="51">
-    <DataTag><![CDATA[1]]></DataTag>
-    <Description><![CDATA[KeyStorage is not implemented on this platform]]></Description>
-</Incident>
-    <Duration msecs="1.711174"/>
-</TestFunction>
-<TestFunction name="cleanupTestCase">
-<Incident type="pass" file="" line="0" />
-    <Duration msecs="0.010215"/>
-</TestFunction>
-<Duration msecs="2.354179"/>
-</TestCase>
-<TestCase name="KeyStorageTests">
-<Environment>
-    <QtVersion>5.7.0</QtVersion>
-    <QtBuild>Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)</QtBuild>
-    <QTestVersion>5.7.0</QTestVersion>
-</Environment>
-<TestFunction name="initTestCase">
-<Incident type="pass" file="" line="0" />
-    <Duration msecs="0.370479"/>
-</TestFunction>
-<TestFunction name="KeyUsage">
-<Incident type="fail" file="..\..\..\sdk\rmscrypto_sdk\UnitTests\KeyStorageTests.cpp" line="53">
-    <DataTag><![CDATA[0]]></DataTag>
-    <Description><![CDATA[KeyStorage is not implemented on this platform]]></Description>
-</Incident>
-<Incident type="fail" file="..\..\..\sdk\rmscrypto_sdk\UnitTests\KeyStorageTests.cpp" line="53">
-    <DataTag><![CDATA[1]]></DataTag>
-    <Description><![CDATA[KeyStorage is not implemented on this platform]]></Description>
-</Incident>
-    <Duration msecs="0.181183"/>
-</TestFunction>
-<TestFunction name="cleanupTestCase">
-<Incident type="pass" file="" line="0" />
-    <Duration msecs="0.009615"/>
-</TestFunction>
-<Duration msecs="0.653821"/>
-</TestCase>
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCase name="CryptedStreamTests">
-<Environment>
-    <QtVersion>5.7.0</QtVersion>
-    <QtBuild>Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)</QtBuild>
-    <QTestVersion>5.7.0</QTestVersion>
-</Environment>
-<TestFunction name="initTestCase">
-<Incident type="pass" file="" line="0" />
-    <Duration msecs="0.226854"/>
-</TestFunction>
-<TestFunction name="CryptedStreamToMemory">
-<Incident type="fail" file="..\..\..\sdk\rmscrypto_sdk\UnitTests\CryptedStreamTests.cpp" line="76">
-    <DataTag><![CDATA[AES_CBC4K]]></DataTag>
-    <Description><![CDATA[Block is not aligned]]></Description>
-</Incident>
-    <Duration msecs="1.197071"/>
-</TestFunction>
-<TestFunction name="cleanupTestCase">
-<Incident type="pass" file="" line="0" />
-    <Duration msecs="0.013220"/>
-</TestFunction>
-<Duration msecs="1.533897"/>
-</TestCase>
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+    <testsuite errors="0" failures="2" tests="3" name="CryptoAPITests">
+      <properties>
+        <property value="5.7.0" name="QTestVersion"/>
+        <property value="5.7.0" name="QtVersion"/>
+        <property value="Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)" name="QtBuild"/>
+      </properties>
+      <testcase result="pass" name="initTestCase"/>
+      <testcase result="fail" name="EncryptDecryptBlockTest">
+        <failure tag="0" message="KeyStorage is not implemented on this platform" result="fail"/>
+        <failure tag="1" message="KeyStorage is not implemented on this platform" result="fail"/>
+      </testcase>
+      <testcase result="pass" name="cleanupTestCase"/>
+      <system-err/>
+    </testsuite>
+    <testsuite errors="0" failures="2" tests="3" name="KeyStorageTests">
+      <properties>
+        <property value="5.7.0" name="QTestVersion"/>
+        <property value="5.7.0" name="QtVersion"/>
+        <property value="Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)" name="QtBuild"/>
+      </properties>
+      <testcase result="pass" name="initTestCase"/>
+      <testcase result="fail" name="KeyUsage">
+        <failure tag="0" message="KeyStorage is not implemented on this platform" result="fail"/>
+        <failure tag="1" message="KeyStorage is not implemented on this platform" result="fail"/>
+      </testcase>
+      <testcase result="pass" name="cleanupTestCase"/>
+      <system-err/>
+    </testsuite>
+    <testsuite errors="0" failures="1" tests="3" name="CryptedStreamTests">
+      <properties>
+        <property value="5.7.0" name="QTestVersion"/>
+        <property value="5.7.0" name="QtVersion"/>
+        <property value="Qt 5.7.0 (x86_64&#x002D;little_endian&#x002D;llp64 shared (dynamic) debug build; by MSVC 2013)" name="QtBuild"/>
+      </properties>
+      <testcase result="pass" name="initTestCase"/>
+      <testcase result="fail" name="CryptedStreamToMemory">
+        <failure tag="AES_CBC4K" message="Block is not aligned" result="fail"/>
+      </testcase>
+      <testcase result="pass" name="cleanupTestCase"/>
+      <system-err/>
+    </testsuite>
+</testsuites>
