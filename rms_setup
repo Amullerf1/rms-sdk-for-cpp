@@ -25,4 +25,6 @@ copy tests\*UnitTestsd.exe .
 rmscryptoUnitTestsd.exe -xunitxml > tests\rmscryptoResults.xml
 rmsauthUnitTestsd.exe -xunitxml > tests\rmsauthResults.xml
 rmsplatformUnitTestsd.exe -xunitxml > tests\rmsplatformResults.xml
-del *UnitTestsd.exe
+rm rmscryptoUnitTestsd.exe
+rm rmsauthUnitTestsd.exe
+rm rmsplatformUnitTestsd.exe
