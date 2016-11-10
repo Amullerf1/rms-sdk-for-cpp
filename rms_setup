@@ -1,4 +1,4 @@
-#!/bin/sh
+#/bin/sh
 apt-get update
 echo $1 | sudo -S sudo apt-get install qt5-default
 echo $1 | sudo -S sudo apt-get install libqt5webkit5-dev
@@ -21,7 +21,7 @@ export LD_LIBRARY_PATH=`pwd`
 cd ../scripts
 echo $1 | sudo -S sudo ./build_and_test.sh
 cd ../bin
-copy tests\*UnitTestsd.exe .
+cp tests/*UnitTestsd.exe .
 rmscryptoUnitTestsd.exe -xunitxml > tests\rmscryptoResults.xml
 rmsauthUnitTestsd.exe -xunitxml > tests\rmsauthResults.xml
 rmsplatformUnitTestsd.exe -xunitxml > tests\rmsplatformResults.xml
