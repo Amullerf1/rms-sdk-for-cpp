@@ -20,7 +20,9 @@ cd ../bin
 export LD_LIBRARY_PATH=`pwd`
 cd ../scripts
 echo $1 | sudo -S sudo ./build_and_test.sh
-cd ../bin/tests
-rmscryptoUnitTestsd.exe -xunitxml > rmscryptoResults.xml
-rmsauthUnitTestsd.exe -xunitxml > rmsauthResults.xml
-rmsplatformUnitTestsd.exe -xunitxml > rmsplatformResults.xml
+cd ../bin
+copy tests\*UnitTestsd.exe .
+rmscryptoUnitTestsd.exe -xunitxml > tests\rmscryptoResults.xml
+rmsauthUnitTestsd.exe -xunitxml > tests\rmsauthResults.xml
+rmsplatformUnitTestsd.exe -xunitxml > tests\rmsplatformResults.xml
+del *UnitTestsd.exe
