@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
     <testsuite errors="0" failures="2" tests="3" name="CryptoAPITests">
       <properties>
         <property value="5.7.0" name="QTestVersion"/>
@@ -41,4 +40,3 @@
       <testcase result="pass" name="cleanupTestCase"/>
       <system-err/>
     </testsuite>
-</testsuites>
