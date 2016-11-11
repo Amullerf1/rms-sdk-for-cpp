@@ -31,4 +31,4 @@ mv rmsauthUnitTests tests/.
 mv rmsplatformUnitTests tests/.
 mv rmsUnitTestResults.txt tests/.
 cd ../../myagent
-powershell ./cryptoTest.ps1
+powershell ./rmsUnitTestParser.ps1
