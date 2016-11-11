@@ -1,3 +1,4 @@
+
 #/bin/sh
 apt-get update
 echo $1 | sudo -S sudo apt-get install qt5-default
@@ -28,5 +29,6 @@ cp tests/*UnitTests .
 mv rmscryptoUnitTests tests/.
 mv rmsauthUnitTests tests/.
 mv rmsplatformUnitTests tests/.
+mv rmsUnitTestResults.txt tests/.
 cd ../../myagent
 powershell ./cryptoTest.ps1
