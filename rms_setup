@@ -19,10 +19,7 @@ qmake
 make
 cd ../bin
 export LD_LIBRARY_PATH=`pwd`
-cd ../scripts
-echo $1 | sudo -S sudo ./build_and_test.sh
-cd ../bin
-cp tests/*UnitTests .
+mv tests/*UnitTests .
 ./rmscryptoUnitTests -xunitxml > rmsUnitTestResults.txt
 ./rmsauthUnitTests -xunitxml >> rmsUnitTestResults.txt
 ./rmsplatformUnitTests -xunitxml >> rmsUnitTestResults.txt
