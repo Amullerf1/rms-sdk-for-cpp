@@ -1,4 +1,6 @@
-#/bin/sh
+#Eventually I want this script to run inside AzureAD/rms-sdk-for-cpp
+#so the path of some files may change in the future
+#!/bin/sh
 apt-get update
 echo $1 | sudo -S sudo apt-get install qt5-default
 echo $1 | sudo -S sudo apt-get install libqt5webkit5-dev
@@ -19,13 +21,16 @@ qmake
 make
 cd ../bin
 export LD_LIBRARY_PATH=`pwd`
-mv tests/*UnitTests .
+cd tests
+#mv tests/*UnitTests .
 ./rmscryptoUnitTests -xunitxml > rmsUnitTestResults.txt
 ./rmsauthUnitTests -xunitxml >> rmsUnitTestResults.txt
 ./rmsplatformUnitTests -xunitxml >> rmsUnitTestResults.txt
-mv rmscryptoUnitTests tests/.
-mv rmsauthUnitTests tests/.
-mv rmsplatformUnitTests tests/.
-mv rmsUnitTestResults.txt tests/.
+#mv rmscryptoUnitTests tests/.
+#mv rmsauthUnitTests tests/.
+#mv rmsplatformUnitTests tests/.
+#mv rmsUnitTestResults.txt tests/.
+#The script rmsUnitTestParser should also be in AzureAD/rms-sdk-for-cpp
+#but for now it is hard coded into /myagent on the linux VM
 cd ../../myagent
 powershell ./rmsUnitTestParser.ps1
