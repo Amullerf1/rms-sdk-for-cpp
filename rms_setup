@@ -28,5 +28,5 @@ cp tests/*UnitTests .
 mv rmscryptoUnitTests tests/.
 mv rmsauthUnitTests tests/.
 mv rmsplatformUnitTests tests/.
-cd ../../../myagent
+cd ../../../../myagent
 powershell ./cryptoTest.ps1
