@@ -26,11 +26,7 @@ cd tests
 ./rmscryptoUnitTests -xunitxml > rmsUnitTestResults.txt
 ./rmsauthUnitTests -xunitxml >> rmsUnitTestResults.txt
 ./rmsplatformUnitTests -xunitxml >> rmsUnitTestResults.txt
-#mv rmscryptoUnitTests tests/.
-#mv rmsauthUnitTests tests/.
-#mv rmsplatformUnitTests tests/.
-#mv rmsUnitTestResults.txt tests/.
-#The script rmsUnitTestParser should also be in AzureAD/rms-sdk-for-cpp
+#The script rmsUnitTestParser.ps1 should also be in AzureAD/rms-sdk-for-cpp
 #but for now it is hard coded into /myagent on the linux VM
 cd ../../../myagent
 powershell ./rmsUnitTestParser.ps1
