@@ -23,14 +23,14 @@ cd ../bin
 export LD_LIBRARY_PATH=`pwd`
 cd tests
 #mv tests/*UnitTests .
-./rmscryptoUnitTests -xunitxml > rmsUnitTestResults.xml
-./rmsauthUnitTests -xunitxml >> rmsUnitTestResults.xml
-./rmsplatformUnitTests -xunitxml >> rmsUnitTestResults.xml
+./rmscryptoUnitTests -xunitxml > rmsUnitTestResults.txt
+./rmsauthUnitTests -xunitxml >> rmsUnitTestResults.txt
+./rmsplatformUnitTests -xunitxml >> rmsUnitTestResults.txt
 #mv rmscryptoUnitTests tests/.
 #mv rmsauthUnitTests tests/.
 #mv rmsplatformUnitTests tests/.
 #mv rmsUnitTestResults.txt tests/.
 #The script rmsUnitTestParser should also be in AzureAD/rms-sdk-for-cpp
 #but for now it is hard coded into /myagent on the linux VM
-#cd ../../../myagent
-#powershell ./rmsUnitTestParser.ps1
+cd ../../../myagent
+powershell ./rmsUnitTestParser.ps1
