@@ -23,9 +23,9 @@ cd ../bin
 export LD_LIBRARY_PATH=`pwd`
 cd tests
 #mv tests/*UnitTests .
-./rmscryptoUnitTests -xunitxml > rmsUnitTestResults.txt
-./rmsauthUnitTests -xunitxml >> rmsUnitTestResults.txt
-./rmsplatformUnitTests -xunitxml >> rmsUnitTestResults.txt
+./rmscryptoUnitTests -xunitxml > rmsUnitTestResults.xml
+./rmsauthUnitTests -xunitxml >> rmsUnitTestResults.xml
+./rmsplatformUnitTests -xunitxml >> rmsUnitTestResults.xml
 #mv rmscryptoUnitTests tests/.
 #mv rmsauthUnitTests tests/.
 #mv rmsplatformUnitTests tests/.
