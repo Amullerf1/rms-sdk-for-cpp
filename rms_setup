@@ -32,5 +32,5 @@ cd tests
 #mv rmsUnitTestResults.txt tests/.
 #The script rmsUnitTestParser should also be in AzureAD/rms-sdk-for-cpp
 #but for now it is hard coded into /myagent on the linux VM
-cd ../../../myagent
-powershell ./rmsUnitTestParser.ps1
+#cd ../../../myagent
+#powershell ./rmsUnitTestParser.ps1
